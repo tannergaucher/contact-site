@@ -1,13 +1,10 @@
-:root {
-  --caps-letter-spacing: 0.3rem;
-}
-
 .title {
   font-style: italic;
 }
 
 .card {
   height: fit-content;
+  box-shadow: var(--elevation-2);
 }
 
 .card-text {
@@ -18,7 +15,6 @@
   margin-top: 0;
   margin-bottom: 0;
   padding: var(--space-md);
-  background-color: var(--bg-1);
   border-radius: var(--radius);
 }
 
@@ -30,4 +26,10 @@
 .github-link {
   padding: var(--space-sm);
   font-size: var(--text-xs);
+}
+
+@media (prefers-color-scheme: dark) {
+  .avatar-img {
+    filter: grayscale(0.5);
+  }
 }
