@@ -1,0 +1,33 @@
+:root {
+  --caps-letter-spacing: 0.3rem;
+}
+
+.title {
+  font-style: italic;
+}
+
+.card {
+  height: fit-content;
+}
+
+.card-text {
+  margin-top: var(--space-sm);
+}
+
+.content-grid {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: var(--space-md);
+  background-color: var(--bg-1);
+  border-radius: var(--radius);
+}
+
+.projects-details[open] {
+  border: var(--thickness) solid var(--bg-2);
+  border-radius: var(--radius);
+}
+
+.github-link {
+  padding: var(--space-sm);
+  font-size: var(--text-xs);
+}
