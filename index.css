@@ -28,6 +28,12 @@
   font-size: var(--text-xs);
 }
 
+.avatar-img {
+  max-width: 300px;
+  border-radius: 100%;
+  filter: grayscale(0.2);
+}
+
 @media (prefers-color-scheme: dark) {
   .avatar-img {
     filter: grayscale(0.5);
