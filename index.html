@@ -93,8 +93,9 @@
                     <br />
                     <fieldset class="fieldset padding">
                          <form class="form" name="contact" method="POST" data-netlify="true">
-                              <input type="text" class="input" required="true" placeholder="Email" />
-                              <textarea class="textarea" placeholder="Message" />
+                              <input type="email" class="input" required="true" placeholder="Email"
+                                   aria-label="Email" />
+                              <textarea aria-label="Message" class="textarea" placeholder="Message" required="true" />
                               <button class="btn  btn-primary" type="submit">Submit</button>
                          </form>
                     </fieldset>
