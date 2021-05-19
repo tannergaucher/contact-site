@@ -23,11 +23,6 @@
   border-radius: var(--radius);
 }
 
-.github-link {
-  padding: var(--space-sm);
-  font-size: var(--text-xs);
-}
-
 .avatar-img {
   max-width: 225px;
   border-radius: 25%;
@@ -44,7 +39,25 @@ textarea {
   width: calc(100% - var(--space-md));
 }
 
+ul {
+  margin-left: var(--space-sm);
+  margin-top: var(--space-md);
+}
+
+li:last-child {
+  margin-bottom: var(--space-sm);
+}
+
+.card li {
+  color: var(--grey);
+}
+
 .summary-heading {
   margin-block-start: 0;
   margin-block-end: 0;
+}
+
+.github-link {
+  margin-left: var(--space-sm);
+  margin-bottom: var(--space-sm);
 }
