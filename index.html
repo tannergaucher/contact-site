@@ -20,7 +20,7 @@
      </script>
 </head>
 
-<body>
+<body class="fade-in">
      <main>
           <article class="padding  container">
                <header>
@@ -32,29 +32,24 @@
                <hr class="hr" />
                <details class="details projects-details" open>
                     <summary class="summary text--xl summary-heading">Projects</summary>
-                    <div class="content-grid">
+                    <div class="content-grid fade-in">
                          <div class="card">
                               <a href="https://semanticstyles.netlify.app" class="nav-link text--md" target="_blank"
                                    rel="noreferrer">
                                    <h3 class="card-heading"> Semantic Styles</h3>
                                    <p class="card-text">Responsive, themed, framework agnostic UI
                                         design system for rapid prototyping.</p>
-
-
                                    <ul>
                                         <li>CSS Variables</li>
                                         <li>Storybook</li>
-                                        <li>Chromatic snapshot testing</li>
-                                        <li>NPM package</li>
+                                        <li>Chromatic testing</li>
+                                        <li>Deployed NPM package</li>
                                    </ul>
-
-
                                    <a href="https://github.com/tannergaucher/semantic-styles"
                                         class="nav-link github-link text--md" target="_blank" rel="noreferrer">
                                         Github
                                    </a>
                               </a>
-
                          </div>
                          <div class="card">
                               <a href="https://semanticstylesmdx.netlify.app" class="nav-link text--md" target="_blank"
@@ -62,13 +57,10 @@
                                    <h3 class="card-heading"> Semantic Styles Documentation Site
                                    </h3>
                                    <p class="card-text">MDX documentation site with live code examples.</p>
-
-
                                    <ul>
                                         <li>Gatsby</li>
                                         <li>MDX</li>
-                                        <li>React Livecode</li>
-                                        <li>Netlify</li>
+                                        <li>React-live examples</li>
                                    </ul>
                                    <a href="https://github.com/tannergaucher/semantic-styles-mdx-site"
                                         class="nav-link github-link text--md" target="_blank"
@@ -87,14 +79,12 @@
                                         <li>Gatsby</li>
                                         <li>React</li>
                                         <li>Reach UI</li>
-                                        <li>Netlify</li>
                                    </ul>
                                    <a href="https://github.com/tannergaucher/semantic-styles-reach-ui"
                                         class="nav-link github-link text--md" target="_blank" rel="noreferrer">Github
                                    </a>
                               </a>
                          </div>
-
                          <div class="card">
                               <a href="https://homerice.app" class="nav-link text--md" target="_blank" rel="noreferrer">
                                    <h3 class="card-heading">Homerice.app</h3>
@@ -109,15 +99,11 @@
                                         <li>YouTube Embed API</li>
                                         <li>Amazon Product API</li>
                                    </ul>
-
-
-
                                    <a href="https://github.com/tannergaucher/home-rice-client"
                                         class="nav-link github-link text--md" target="_blank"
                                         rel="noreferrer">Github</a>
                               </a>
                          </div>
-
                          <div class="card">
                               <a href="https://untrip.app" class="nav-link text--md" target="_blank" rel="noreferrer">
                                    <h3 class="card-heading"> Untrip.app
@@ -125,14 +111,13 @@
                                    <p class="card-text">Curate static content into dynamic lists and share on social
                                         media.
                                    </p>
-
                                    <ul>
                                         <li>React</li>
                                         <li>Gatsby</li>
                                         <li>Sanity CMS</li>
                                         <li>Apollo Client</li>
                                         <li>Apollo Server</li>
-                                        <li>Netlify Lambda Functions </li>
+                                        <li>Lambda</li>
                                         <li>JSON Web Token</li>
                                         <li>Prisma Client ORM</li>
                                    </ul>
@@ -147,11 +132,10 @@
                                    <h3 class="card-heading"> Flipcard.fun
                                    </h3>
                                    <p class="card-text">Share jokes with friends on a card that flips.</p>
-
                                    <ul>
                                         <li>React</li>
                                         <li>React Context API</li>
-                                        <li>Lambda Functions</li>
+                                        <li>Lambda</li>
                                         <li>JSON Web Token</li>
                                         <li>MongoDB Atlas</li>
                                    </ul>
@@ -165,8 +149,7 @@
                <details class="details" open>
                     <summary class="summary text--xl summary-heading">Contact</summary>
                     <br />
-                    <!-- <fieldset class="fieldset padding"> -->
-                    <form class="form" name="contact" method="POST" data-netlify="true">
+                    <form class="form fade-in" name="contact" method="POST" data-netlify="true">
                          <label for="email">
                               <h4>Email</h4>
                               <input type="email" class="input" required="true" name="email" aria-label="Email" />
@@ -175,22 +158,16 @@
                               <h4>Message</h4>
                               <textarea aria-label="Message" name="message" class="textarea" placeholder="Message"
                                    name="message" required="true" />
-
                          </label>
                          <button class="btn  btn-primary" type="submit">Submit</button>
                     </form>
-                    <!-- </fieldset> -->
                </details>
-
                <hr class="hr" />
           </article>
-
      </main>
-
      <button class="btn btn-primary toggle-mode-btn" style="position: sticky; bottom: var(--space-md); float: right;">
      </button>
      <script src="./node_modules/semantic-styles/package/modes/index.js"></script>
-
 </body>
 
 </html>
