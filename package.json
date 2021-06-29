@@ -10,10 +10,10 @@
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "semantic-styles": "0.0.45"
-  },
   "devDependencies": {
     "cssnano": "^4.1.10"
+  },
+  "dependencies": {
+    "semantic-styles": "^0.1.0"
   }
 }
