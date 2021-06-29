@@ -2,6 +2,8 @@
 
 :root {
 --mono: 'Fira Mono', monospace;
+--accent-2-dark: lime;
+--accent-2-light: fuchsia;
 }
 
 body, .input, .btn, .textarea {
