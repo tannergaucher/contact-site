@@ -1,12 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;700&display=swap');
 
 :root {
---mono: 'Fira Mono', monospace;
---accent-2-dark: lime;
---accent-2-light: fuchsia;
+  --mono: 'Fira Mono', monospace;
+  --accent-2-dark: lime;
+  --accent-2-light: fuchsia;
 }
 
-body, .input, .btn, .textarea {
+body,
+.input,
+.btn,
+.textarea {
   font-family: var(--mono);
 }
 
@@ -36,7 +39,6 @@ body, .input, .btn, .textarea {
 }
 
 .avatar-img {
-  max-width: 225px;
   border-radius: 25%;
   filter: grayscale(0.2);
   box-shadow: var(--elevation-2);
