@@ -33,18 +33,19 @@
             alt="avatar"
             class="avatar-img"
             style="
-              margin-top: var(--space-xl);
-              box-shadow: var(--elevation-2);
               width: 225px;
               height: 225px;
+              border-radius: var(--space-lg);
+              margin-block-start: var(--space-xl);
+              margin-block-end: var(--space-lg);
             "
           />
-          <h1 class="text--xxxl uppercase">Tanner Gaucher</h1>
-          <h2>Software Engineer Based in Brooklyn</h2>
+          <h1>Tanner Gaucher</h1>
+          <p>Software Engineer Based in Brooklyn</p>
         </header>
         <hr />
-        <details class="projects-details" open>
-          <summary class="text--xl summary-heading">Projects</summary>
+        <!-- <details open>
+          <summary>Projects</summary>
           <div class="content-grid fade-in">
             <div class="card">
               <a
@@ -213,41 +214,30 @@
               </a>
             </div>
           </div>
-        </details>
-        <details>
-          <summary class="text--xl summary-heading">Contact</summary>
-          <br />
-          <form
-            class="form fade-in"
-            name="contact"
-            method="POST"
-            data-netlify="true"
-          >
-            <label for="email">
-              <h4>Email</h4>
-              <input
-                type="email"
-                class="input"
-                required="true"
-                name="email"
-                aria-label="Email"
-              />
-            </label>
-            <label for="message">
-              <h4>Message</h4>
-              <textarea
-                aria-label="Message"
-                name="message"
-                class="textarea"
-                placeholder="Message"
-                name="message"
-                required="true"
-              />
-            </label>
+        </details> -->
+        <details open>
+          <summary>Contact</summary>
+          <form name="contact" method="POST" data-netlify="true">
+            <label for="email"> Email</label>
+            <br />
+            <input
+              type="email"
+              required="true"
+              name="email"
+              aria-label="Email"
+            />
+            <label for="message">Message</label>
+            <br />
+            <textarea
+              aria-label="Message"
+              name="message"
+              placeholder="Message"
+              name="message"
+              required="true"
+            />
             <button type="submit">Submit</button>
           </form>
         </details>
-        <hr />
       </article>
     </main>
     <button
