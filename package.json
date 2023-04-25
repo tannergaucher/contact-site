@@ -13,6 +13,6 @@
     "cssnano": "^4.1.10"
   },
   "dependencies": {
-    "semantic-styles": "^0.1.0"
+    "semantic-styles": "0.1.15"
   }
 }
