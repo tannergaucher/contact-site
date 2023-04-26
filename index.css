@@ -12,3 +12,72 @@ body,
 .textarea {
   font-family: var(--mono);
 }
+
+/* media query for 600px */
+
+@media screen and (max-width: 600px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* 
+.title {
+  font-style: italic;
+}
+
+.card {
+  height: fit-content;
+  box-shadow: var(--elevation-2);
+}
+
+.card-text {
+  margin-top: var(--space-sm);
+}
+
+.content-grid {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: var(--space-md);
+  border-radius: var(--radius);
+}
+
+.avatar-img {
+  border-radius: 25%;
+  filter: grayscale(0.2);
+  box-shadow: var(--elevation-2);
+}
+
+label h4 {
+  margin-bottom: var(--space-md);
+}
+
+input,
+textarea {
+  width: calc(100% - var(--space-md));
+}
+
+ul {
+  margin-left: var(--space-sm);
+  margin-top: var(--space-md);
+}
+
+li:last-child {
+  margin-bottom: var(--space-sm);
+}
+
+.card li {
+  color: var(--grey);
+}
+
+.summary-heading {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.github-link {
+  margin-left: var(--space-sm);
+  margin-bottom: var(--space-sm);
+} */
