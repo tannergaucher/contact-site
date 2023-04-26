@@ -13,8 +13,11 @@ body,
   font-family: var(--mono);
 }
 
-/* media query for 600px */
+.card {
+  border: var(--thickness) solid var(--text-color);
+}
 
+/* media query for 600px */
 @media screen and (max-width: 600px) {
   header {
     display: flex;
