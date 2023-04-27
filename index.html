@@ -23,6 +23,13 @@
     </script>
   </head>
   <body class="fade-in">
+    <video
+      src="./assets/site.mp4"
+      type="video/mp4"
+      autoplay
+      muted
+      playsinline
+    ></video>
     <main>
       <article class="padding container">
         <header>
@@ -218,14 +225,16 @@
         </details>
         <hr />
       </article>
+      <button
+        class="primary toggle-mode-btn"
+        style="position: sticky; bottom: var(--space-md); float: right"
+      ></button>
     </main>
-    <button
-      class="primary toggle-mode-btn"
-      style="position: sticky; bottom: var(--space-md); float: right"
-    ></button>
     <script
       src="./node_modules/semantic-styles/package/modes/index.js"
       type="module"
     ></script>
+    <!-- import index.js -->
+    <script src="./index.js" type="module"></script>
   </body>
 </html>
