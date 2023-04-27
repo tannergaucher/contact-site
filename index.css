@@ -14,7 +14,11 @@ body,
 }
 
 .card {
-  border: var(--thickness) solid var(--text-color);
+  border: var(--thickness) solid var(--accent-1);
+}
+
+.card:hover {
+  border: var(--thickness) solid var(--accent-2);
 }
 
 .content-grid {
