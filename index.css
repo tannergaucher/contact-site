@@ -40,4 +40,15 @@ video {
   height: 100vh;
   margin: 0 auto;
   display: block;
+  position: relative;
+}
+
+.skip-button {
+  position: absolute;
+  margin-bottom: 0;
+  bottom: 0;
+  right: 0;
+  border: 0;
+  border-radius: 0;
+  opacity: 0.7;
 }
