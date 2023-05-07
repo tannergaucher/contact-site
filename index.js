@@ -7,7 +7,7 @@ skipButton.style.display = "none";
 
 setTimeout(() => {
   skipButton.style.display = "block";
-}, 5000);
+}, 2000);
 
 skipButton.addEventListener("click", function () {
   video.style.display = "none";
