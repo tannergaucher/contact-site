@@ -10,59 +10,85 @@
       rel="stylesheet"
       href="./node_modules/@t_g/default-ui/package/index.css"
     />
-    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./local.css" />
   </head>
+
   <body>
-    <div>
-      <video
-        src="https://storage.googleapis.com/tannergaucher-dot-com/site-2.mp4"
-        type="video/mp4"
-        autoplay
-        muted
-        playsinline
-      ></video>
-      <button class="skip-button">Skip Intro</button>
-    </div>
+    <video
+      src="https://storage.googleapis.com/tannergaucher-dot-com/site-2.mp4"
+      type="video/mp4"
+      autoplay
+      muted
+      playsinline
+    ></video>
+    <button class="skip-button">Skip Intro</button>
+
+    <header>
+      <details>
+        <summary>Theme</summary>
+        <section>
+          <button
+            id="toggle-mode-btn"
+            style="margin-bottom: var(--space-sm)"
+            type="submit"
+          ></button>
+        </section>
+      </details>
+    </header>
     <main>
-      <section>
+      <nav>
         <img
           src="./assets/avatar.jpg"
           alt="avatar"
-          class="avatar-img"
+          class="avatar-image"
           style="
             width: 225px;
             height: 225px;
-            border-radius: var(--space-lg);
+            border-radius: var(--space-md);
             margin-block-start: var(--space-xl);
-            margin-block-end: var(--space-lg);
+            margin-block-end: 0;
+            box-shadow: var(--elevation-2);
           "
         />
-        <a href="/">
-          <h1>Tanner Gaucher</h1>
-        </a>
+
+        <h1
+          style="margin-block-end: var(--space-lg); text-transform: uppercase"
+        >
+          Tanner Gaucher
+        </h1>
         <em>
-          <h2 class="text--md">
+          <h2 class="text--lg" style="margin-block-start: 0">
             Full Stack Software Engineer Based in Brooklyn, NY
           </h2>
         </em>
-        <nav>
-          <ul>
-            <a href="https://github.com/tannergaucher" target="_blank">
-              <li>GitHub</li>
+
+        <ul>
+          <li>
+            <a
+              href="https://github.com/tannergaucher"
+              target="_blank"
+              class="text--lg"
+            >
+              GitHub
             </a>
+          </li>
+          <li>
             <a
               href="https://www.linkedin.com/in/tanner-gaucher-050604197/"
               target="_blank"
+              class="text--lg"
             >
-              <li>LinkedIn</li>
+              LinkedIn
             </a>
-          </ul>
-        </nav>
-      </section>
+          </li>
+        </ul>
+      </nav>
 
       <details>
         <summary>Projects</summary>
-        <section>
+        <section
+          style="margin-block-start: 0; margin-block-end: var(--space-md)"
+        >
           <article>
             <h3>Vertical Shorts Publisher</h3>
             <p>
@@ -192,9 +218,18 @@
           </article>
         </section>
       </details>
-      <details open>
-        <summary>Contact</summary>
-        <form name="contact" method="POST" data-netlify="true">
+
+      <details>
+        <summary>Contact Form</summary>
+        <form
+          name="contact"
+          method="POST"
+          data-netlify="true"
+          style="
+            margin-block-start: var(--space-xs);
+            margin-block-end: var(--space-md);
+          "
+        >
           <label for="email"> Email</label>
           <br />
           <input type="email" required="true" name="email" aria-label="Email" />
@@ -206,23 +241,14 @@
             placeholder="Message"
             name="message"
             required="true"
+            rows="10"
           />
           <button type="submit">Submit</button>
         </form>
       </details>
-
-      <!-- <button
-        class="primary toggle-mode-btn"
-        style="
-          position: sticky;
-          bottom: var(--space-md);
-          float: right;
-          margin-right: var(--space-md);
-        "
-      ></button> -->
     </main>
     <script
-      src="node_modules/@t_g/default-ui/package/index.js"
+      src="node_modules/@t_g/default-ui/package/index.ts"
       type="module"
     ></script>
     <script src="./index.js" type="module"></script>

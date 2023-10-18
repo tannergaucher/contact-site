@@ -16,6 +16,6 @@
     "process": "^0.11.10"
   },
   "dependencies": {
-    "@t_g/default-ui": "^0.22.0"
+    "@t_g/default-ui": "^0.26.2"
   }
 }

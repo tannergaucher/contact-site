@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css?family=Fira+Code:400,700");
+
+:root {
+  --mono: "Fira Mono", monospace;
+  --caps-letter-spacing: 0.1em;
+}
+
+body {
+  font-family: var(--mono);
+}
+
+nav {
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  text-align: center;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  margin-block-start: 0;
+  margin-block-end: var(--space-lg);
+}
+
+nav ul li {
+  margin-inline: var(--space-md);
+}
+
+main > details:last-child {
+  margin-block-end: var(--space-xl);
+}
+
+@media (max-width: 900px) {
+  main > details:last-child {
+    margin-block-end: var(--space-md);
+  }
+}
+
+video {
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  display: block;
+  position: relative;
+}
+
+.skip-button {
+  position: absolute;
+  margin-bottom: 0;
+  bottom: 0;
+  right: 0;
+  border: 0;
+  border-radius: 0;
+  opacity: 0.7;
+  width: 100%;
+  animation: pulse 1.2s infinite alternate;
+}
+
+.avatar-image {
+  animation: shake 0.5s;
+  transition: transform 0.2s;
+}
+
+@keyframes shake {
+  0% {
+    transform: scale(1) skew(0deg);
+  }
+  25% {
+    transform: scale(1.1) skew(5deg);
+    box-shadow: var(--elevation-2);
+  }
+  50% {
+    transform: scale(1) skew(0deg);
+    box-shadow: var(--elevation-1);
+  }
+  75% {
+    transform: scale(1.1) skew(-5deg);
+    box-shadow: calc(var(--elevation-3));
+  }
+  100% {
+    transform: scale(1) skew(0deg);
+  }
+}
+
+header > details > summary {
+  animation: pulse 1.2s infinite alternate;
+}
+
+@keyframes pulse {
+  0% {
+    color: var(--accent-1);
+  }
+  100% {
+    color: var(--accent-2);
+  }
+}
+
+details > section > article {
+  background-color: var(--bg-1);
+}
+
+details > form > input,
+details > form > textarea {
+  background-color: var(--bg-1);
+}
