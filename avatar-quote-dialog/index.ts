@@ -18,7 +18,7 @@ if (!avatarQuoteContainer) {
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
-      restartQuotes();
+      resetQuotes();
     }
   });
 });
@@ -59,7 +59,7 @@ function setQuotes(quotes: string[]) {
 
 let interval: number | null = null;
 
-function restartQuotes() {
+function resetQuotes() {
   if (interval) {
     clearInterval(interval);
   }
@@ -80,4 +80,4 @@ function restartQuotes() {
 }
 
 // Initial start
-restartQuotes();
+resetQuotes();
