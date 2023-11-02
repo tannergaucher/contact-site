@@ -2,256 +2,120 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tanner Gaucher | Software Engineer Based in Brooklyn</title>
-    <meta name="Description" content="Software Engineer Based in Brooklyn" />
-    <link rel="stylesheet" href="./node_modules/semantic-styles/index.css" />
-    <link rel="stylesheet" href="./index.css" />
+    <title>Default UI</title>
+    <meta
+      name="description"
+      content="Responsive, themed styles for HTML elements"
+    />
+    <link rel="stylesheet" href="./avatar-quote-dialog/index.css" />
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap");
+      :root {
+        --sans: "Fira Sans", sans-serif;
+      }
+      body {
+        font-family: var(--sans);
+      }
+    </style>
   </head>
-  <body class="fade-in">
-    <section>
-      <video
-        src="https://storage.googleapis.com/tannergaucher-dot-com/site-2.mp4"
-        type="video/mp4"
-        autoplay
-        muted
-        playsinline
-      ></video>
-      <button class="skip-button">Skip Intro</button>
-    </section>
+  <body>
+    <header>
+      <details id="details-menu">
+        <summary>THEME</summary>
+        <section>
+          <label>
+            <p>Mode</p>
+          </label>
+          <button id="toggle-mode-btn" type="submit" />
+        </section>
+        <br />
+      </details>
+    </header>
     <main>
-      <article class="padding container">
-        <header>
-          <img
-            src="./assets/avatar.jpg"
-            alt="avatar"
-            class="avatar-img"
-            style="
-              width: 225px;
-              height: 225px;
-              border-radius: var(--space-lg);
-              margin-block-start: var(--space-xl);
-              margin-block-end: var(--space-lg);
-            "
-          />
-          <a href="/">
-            <h1>Tanner Gaucher</h1>
-          </a>
-          <em>
-            <p>Full Stack Software Engineer Based in Brooklyn, NY</p>
-          </em>
-          <nav>
-            <ul style="margin-block-start: 0 var(--space-sm)">
-              <a href="https://github.com/tannergaucher" target="_blank">
-                <li>GitHub</li>
-              </a>
-              <a
-                href="https://www.linkedin.com/in/tanner-gaucher-050604197/"
-                target="_blank"
-              >
-                <li>LinkedIn</li>
-              </a>
-            </ul>
-          </nav>
-        </header>
-        <hr style="margin-block-start: var(--space-lg)" />
-        <details>
-          <summary>Projects</summary>
-          <div class="content-grid fade-in">
-            <article class="card">
-              <a
-                href="https://github.com/tannergaucher/vertical-shorts-app"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <h2 class="card-heading">Vertical Shorts Publisher</h2>
-                <p class="card-text">
-                  Multichannel social media publisher for short form video
-                  content.
-                </p>
-                <section class="padding">
-                  <ul>
-                    <li>Remix</li>
-                    <li>Prisma</li>
-                    <li>Cockroach DB</li>
-                    <li>GCP Pub/Sub</li>
-                    <li>GCP Cloud Functions Gen 2</li>
-                    <li>GCP Cloud Storage</li>
-                  </ul>
-                </section>
-              </a>
-            </article>
-            <article class="card">
-              <a
-                href="https://github.com/tannergaucher/semantic-styles"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <h2 class="card-heading">Semantic Styles</h2>
-                <p class="card-text">
-                  Responsive, themed, framework agnostic UI design system for
-                  rapid prototyping.
-                </p>
-                <section class="padding">
-                  <ul>
-                    <li>CSS Variables</li>
-                    <li>Storybook</li>
-                    <li>Chromatic testing</li>
-                    <li>NPM package</li>
-                  </ul>
-                </section>
-              </a>
-            </article>
-            <article class="card">
-              <a
-                href="https://github.com/tannergaucher/semantic-styles-mdx-site"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <h2 class="card-heading">Semantic Styles Documentation Site</h2>
-                <p class="card-text">
-                  MDX documentation site with live code examples.
-                </p>
-                <section class="padding">
-                  <ul>
-                    <li>Gatsby</li>
-                    <li>MDX</li>
-                    <li>React-live examples</li>
-                  </ul>
-                </section>
-              </a>
-            </article>
-            <article class="card">
-              <a
-                href="https://github.com/tannergaucher/semantic-styles-reach-ui"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <h2 class="card-heading">Semantic Styles X Reach UI</h2>
-                <p class="card-text">
-                  Responsive, themed, UI design system meets "the accessible
-                  foundation of your React-based design system".
-                </p>
-                <section class="padding">
-                  <ul>
-                    <li>Gatsby</li>
-                    <li>React</li>
-                    <li>Reach UI</li>
-                  </ul>
-                </section>
-              </a>
-            </article>
-            <article class="card">
-              <a
-                href="https://github.com/tannergaucher/home-rice-client"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <h2 class="card-heading">Homerice.app</h2>
-                <p class="card-text">
-                  YouTube / Amazon affiliate links proof of concept content
-                  platform for future YouTube channel.
-                </p>
-                <section class="padding">
-                  <ul>
-                    <li>React</li>
-                    <li>Gatsby</li>
-                    <li>Sanity CMS</li>
-                    <li>YouTube Embed API</li>
-                    <li>Amazon Product API</li>
-                  </ul>
-                </section>
-              </a>
-            </article>
-            <article class="card">
-              <a
-                href="https://github.com/tannergaucher/untrip"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <h2 class="card-heading">Untrip.app</h2>
-                <p class="card-text">
-                  Curate static content into dynamic lists and share on social
-                  media.
-                </p>
-                <section class="padding">
-                  <ul>
-                    <li>React</li>
-                    <li>Gatsby</li>
-                    <li>Sanity CMS</li>
-                    <li>Apollo Client</li>
-                    <li>Apollo Server</li>
-                    <li>Lambda</li>
-                    <li>JSON Web Token</li>
-                    <li>Prisma Client ORM</li>
-                  </ul>
-                </section>
-              </a>
-            </article>
-            <article class="card">
-              <a
-                href="https://flipcard-fun.netlify.app"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <h2 class="card-heading">Flipcard.fun</h2>
-                <p class="card-text">
-                  Share jokes with friends on a card that flips.
-                </p>
-                <section class="padding">
-                  <ul>
-                    <li>React</li>
-                    <li>React Context API</li>
-                    <li>Lambda</li>
-                    <li>JSON Web Token</li>
-                    <li>MongoDB Atlas</li>
-                  </ul>
-                </section>
-              </a>
-            </article>
-          </div>
-        </details>
-        <details>
-          <summary>Contact</summary>
-          <form name="contact" method="POST" data-netlify="true">
-            <label for="email"> Email</label>
-            <br />
-            <input
-              type="email"
-              required="true"
-              name="email"
-              aria-label="Email"
-            />
-            <label for="message">Message</label>
-            <br />
-            <textarea
-              aria-label="Message"
-              name="message"
-              placeholder="Message"
-              name="message"
-              required="true"
-              style="height: 25vh"
-            />
-            <button type="submit">Submit</button>
-          </form>
-        </details>
-        <hr />
+      <h1>Tanner Gaucher</h1>
+      <h2>Full Stack Software Engineer Based in Brooklyn</h2>
+      <nav style="margin-block-end: var(--space-lg)">
+        <ul>
+          <li>
+            <a target="_blank" href="https://github.com/tannergaucher">
+              <h3>Github</h3>
+            </a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/tanner-gaucher-050604197/"
+            >
+              <h3>LinkedIn</h3></a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <hr />
+
+      <h2>Introduction</h2>
+
+      <article style="position: relative">
+        <video
+          src="https://storage.googleapis.com/tannergaucher-dot-com/site-2.mp4"
+          autoplay
+          loop
+          style="border-radius: var(--radius)"
+        ></video>
+        <img
+          class="avatar-image"
+          src="https://tannergaucher.com/avatar.4b4e8341.jpg"
+          alt=""
+        />
+
+        <div class="avatar-quote-container"></div>
       </article>
-      <button
-        class="primary toggle-mode-btn"
-        style="
-          position: sticky;
-          bottom: var(--space-md);
-          float: right;
-          margin-right: var(--space-md);
-        "
-      ></button>
+
+      <section style="margin-block-start: var(--space-xl)">
+        <hr />
+        <h2>Contact</h2>
+        <h3>Leave a message after the tone and I'll get back to you. Beep.</h3>
+        <form name="contact" method="POST" data-netlify="true">
+          <label for="email"> Email</label>
+          <br />
+          <input type="email" required="true" name="email" aria-label="Email" />
+          <label for="message">Message</label>
+          <br />
+          <textarea
+            aria-label="Message"
+            name="message"
+            placeholder="Message"
+            name="message"
+            required="true"
+            style="height: 25vh"
+          />
+          <button type="submit">Submit</button>
+        </form>
+      </section>
     </main>
+    <footer>
+      <h2>Tanner Gaucher</h2>
+      <h3>Full Stack Software Engineer Based in Brooklyn</h3>
+      <nav>
+        <ul>
+          <li>
+            <a href="">
+              <h3>Github</h3>
+            </a>
+          </li>
+          <li>
+            <a href=""> <h3>LinkedIn</h3></a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
     <script
-      src="./node_modules/semantic-styles/package/modes/index.js"
+      src="node_modules/@t_g/default-ui/package/index.ts"
       type="module"
     ></script>
-    <script src="./index.js" type="module"></script>
+    <script src="./avatar-quote-dialog/index.ts" type="module"></script>
   </body>
 </html>
