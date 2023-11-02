@@ -3,10 +3,10 @@ const quotes = [
   "😄  Nice to meet you!",
   "🖥️  I like building things for the web.",
   "undefined",
-  "🐛  Hah, i bet you thought that was a bug!",
+  "🐛  Hah, you might have thought that was a bug!",
   '🤓  I just wrote "undefined" there as a joke.',
   "😅  Ha ha.",
-  "😎  Anyways, let's work together. Hire me!",
+  "😎  Anyway, let's work together. Hire me!",
 ];
 
 const avatarQuoteContainer = document.querySelector(".avatar-quote-container");
