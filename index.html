@@ -12,11 +12,16 @@
 
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap");
+
       :root {
         --sans: "Fira Sans", sans-serif;
       }
       body {
         font-family: var(--sans);
+      }
+
+      nav > ul > li > a {
+        font-weight: bold;
       }
     </style>
   </head>
@@ -39,17 +44,22 @@
       <nav style="margin-block-end: var(--space-lg)">
         <ul>
           <li>
-            <a target="_blank" href="https://github.com/tannergaucher">
-              <h3>Github</h3>
+            <a
+              target="_blank"
+              href="https://github.com/tannergaucher"
+              class="text--lg"
+            >
+              Github
             </a>
           </li>
           <li>
             <a
               target="_blank"
               href="https://www.linkedin.com/in/tanner-gaucher-050604197/"
+              class="text--lg"
             >
-              <h3>LinkedIn</h3></a
-            >
+              LinkedIn
+            </a>
           </li>
         </ul>
       </nav>
@@ -104,12 +114,22 @@
       <nav>
         <ul>
           <li>
-            <a href="">
-              <h3>Github</h3>
+            <a
+              href="https://github.com/tannergaucher"
+              target="_blank"
+              class="text--md"
+            >
+              Github
             </a>
           </li>
           <li>
-            <a href=""> <h3>LinkedIn</h3></a>
+            <a
+              href="https://www.linkedin.com/in/tanner-gaucher-050604197/"
+              target="_blank"
+              class="text--md"
+            >
+              LinkedIn</a
+            >
           </li>
         </ul>
       </nav>
