@@ -4,7 +4,7 @@ const quotes = [
   "🖥️  I like building things for the web.",
   "undefined",
   "🐛  You might have thought that was a bug!",
-  '🤓  But I just wrote "undefined" there as a joke.',
+  "🤓  But I did that as a joke.",
   "😅  Ha ha.",
   "😎  Anyway, let's work together. Hire me!",
 ];
