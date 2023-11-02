@@ -1,7 +1,7 @@
 const quotes = [
   "👋  Hey, I'm Tanner.",
   "😄  Nice to meet you!",
-  "🖥️  I like building things for the web.",
+  "☕️🐢 🖥️ I like coffee, turtles, and building things for the web.",
   "undefined",
   "🐛  You might have thought that was a bug!",
   "🤓  But I did that as a joke.",
@@ -76,7 +76,7 @@ function resetQuotes() {
 
   interval = setInterval(() => {
     setQuotes(quotes);
-  }, 1900);
+  }, 2100);
 }
 
 // Initial start
