@@ -43,7 +43,7 @@
 }
 
 .avatar-quote[avatar-quote-number="4"] {
-  color: tomato;
+  color: var(--error-color);
   font-family: monospace;
   font-style: italic;
   animation: glitch 0.3s infinite;
