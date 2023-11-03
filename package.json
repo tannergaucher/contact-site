@@ -1,7 +1,8 @@
 {
   "name": "contact-page",
+  "author": "tannermichaelgaucher@gmail.com",
   "version": "1.0.0",
-  "description": "",
+  "description": "tannergaucher.com",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npx parcel index.html",
@@ -9,7 +10,6 @@
     "deploy": "npx parcel build index.html && netlify deploy",
     "deploy:prod": "npx parcel build index.html && netlify deploy --prod"
   },
-  "author": "",
   "license": "ISC",
   "dependencies": {
     "@t_g/default-ui": "^0.28.1"
