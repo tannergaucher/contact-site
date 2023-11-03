@@ -1,7 +1,7 @@
 const quotes = [
   "👋  Hey, I'm Tanner.",
   "😄  Nice to meet you!",
-  "☕️🐢 🖥️ I like coffee, turtles, and building things for the web.",
+  "🐢 🌺 🖥️ I like turtles, fuchsia, and building things for the web.",
   "undefined",
   "🐛  You might have thought that was a bug!",
   "🤓  But I did that as a joke.",
@@ -38,7 +38,7 @@ function setQuotes(quotes: string[]) {
 
   const currentQuote = avatarQuotes[avatarQuotes.length - 1];
   let nextQuoteIndex = quotes.indexOf(currentQuote.innerHTML) + 1;
-  const nextQuote = document.createElement("blockquote");
+  const nextQuote = document.createElement("p");
 
   if (nextQuoteIndex >= quotes.length) {
     const allQuotes = document.querySelectorAll(".avatar-quote");
@@ -67,7 +67,7 @@ function resetQuotes() {
   const existingQuotes = document.querySelectorAll(".avatar-quote");
   existingQuotes.forEach((quote) => quote.remove());
 
-  const initialQuote = document.createElement("blockquote");
+  const initialQuote = document.createElement("p");
   initialQuote.classList.add("avatar-quote");
   initialQuote.setAttribute("avatar-quote-number", "1");
   initialQuote.setAttribute("current-quote", "true");

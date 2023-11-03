@@ -9,7 +9,7 @@
 
 .avatar-quote-container {
   position: absolute;
-  bottom: 150px;
+  bottom: 170px;
   left: 150px;
   z-index: 1;
   width: 600px;
@@ -38,6 +38,8 @@
 .avatar-quote[current-quote="true"] {
   opacity: 1;
   animation: pulse 0.3s;
+  background-color: var(--bg-2);
+  border: var(--thickness) solid var(--accent-1);
 }
 
 .avatar-quote[avatar-quote-number="4"] {
