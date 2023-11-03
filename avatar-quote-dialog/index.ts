@@ -1,7 +1,7 @@
 const quotes = [
   "👋  Hey, I'm Tanner.",
   "😄  Nice to meet you!",
-  "🐢 🌺 🖥️ I like turtles, fuchsia, and building things for the web.",
+  "🐢 🌺 🖥️   I like turtles, fuchsia, and building things for the web.",
   "undefined",
   "🐛  You might have thought that was a bug!",
   "🤓  But I did that as a joke.",
