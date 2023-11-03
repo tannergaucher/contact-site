@@ -49,8 +49,11 @@ function setQuotes(quotes: string[]) {
   nextQuote.classList.add("avatar-quote");
   nextQuote.setAttribute("avatar-quote-number", `${nextQuoteIndex + 1}`);
 
-  const allQuotes = document.querySelectorAll(".avatar-quote");
-  allQuotes.forEach((quote) => quote.removeAttribute("current-quote"));
+  const currentQuoteElement = document.querySelector('[current-quote="true"]');
+
+  if (currentQuoteElement) {
+    currentQuoteElement.removeAttribute("current-quote");
+  }
 
   nextQuote.setAttribute("current-quote", "true");
   nextQuote.innerText = quotes[nextQuoteIndex];
