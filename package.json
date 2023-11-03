@@ -11,10 +11,6 @@
   },
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "cssnano": "^4.1.10",
-    "process": "^0.11.10"
-  },
   "dependencies": {
     "@t_g/default-ui": "^0.28.1"
   }
