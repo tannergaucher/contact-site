@@ -12,6 +12,6 @@
   },
   "license": "ISC",
   "dependencies": {
-    "@t_g/default-ui": "^0.28.1"
+    "@t_g/default-ui": "^0.28.5"
   }
 }
