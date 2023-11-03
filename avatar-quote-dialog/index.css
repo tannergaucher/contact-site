@@ -16,8 +16,11 @@
   box-shadow: var(--elevation-3);
 }
 
-.avatar-quote-container > .avatar-quote[avatar-quote-number="4"] {
-  animation: flicker 0.3s infinite;
+@media (max-width: 768px) {
+  .avatar-image,
+  .avatar-quote-container {
+    display: none;
+  }
 }
 
 .avatar-quote {
@@ -44,6 +47,10 @@
   animation: glitch 0.3s infinite;
 }
 
+.avatar-quote-container > .avatar-quote[avatar-quote-number="4"] {
+  animation: flicker 0.3s infinite;
+}
+
 .avatar-quote[avatar-quote-number="4"]:not([current-quote="true"]) {
   display: none;
 }
@@ -60,13 +67,6 @@
   100% {
     transform: scale(1) skew(0deg);
     opacity: 1;
-  }
-}
-
-@media (max-width: 768px) {
-  .avatar-image,
-  .avatar-quote-container {
-    display: none;
   }
 }
 
