@@ -18,10 +18,14 @@
       body {
         font-family: var(--sans);
       }
+      input,
+      textarea {
+        font-size: var(--text-lg);
+      }
     </style>
   </head>
   <body>
-    <header role="region">
+    <header>
       <details>
         <summary>THEME</summary>
         <section>
@@ -71,8 +75,8 @@
         <img
           class="avatar-image"
           src="./assets/avatar.jpg"
-          alt="Tanner Gaucher Avatar"
-          title="Tanner Gaucher Avatar"
+          alt="Avatar image of Tanner Gaucher"
+          title="Tanner Gaucher"
         />
         <div class="avatar-quote-container"></div>
       </article>
@@ -85,11 +89,11 @@
         <input type="email" name="email" required />
         <label for="message"> Message: </label>
         <br />
-        <textarea name="message" rows="10" required />
+        <textarea name="message" rows="7" required />
         <button type="submit">Submit</button>
       </form>
     </main>
-    <footer role="region">
+    <footer>
       <h2>Tanner Gaucher</h2>
       <h3>Full Stack Software Engineer Based in Brooklyn, NY</h3>
       <nav>
