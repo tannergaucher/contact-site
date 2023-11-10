@@ -12,8 +12,7 @@ const quotes = [
   "🐛  You might have thought that was a bug!",
   "🤓  But I did that as a joke.",
   "😅  Ha ha.",
-  "🔥 Btw this site scores 100 on Lighthouse report...",
-  "😎  Hire me!",
+  "😎  BTW let's work together. Hire me!",
 ];
 
 const avatarQuoteContainer = document.querySelector(".avatar-quote-container");
