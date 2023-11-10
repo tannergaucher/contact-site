@@ -4,17 +4,18 @@
   "version": "1.0.0",
   "description": "tannergaucher.com",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npx parcel index.html",
-    "build": "npx parcel build index.html",
-    "deploy": "npx parcel build index.html && netlify deploy",
-    "deploy:prod": "npx parcel build index.html && netlify deploy --prod"
+    "test": "echo \"Error:r no test specified\" && exit 1",
+    "dev": "vite",
+    "build": "vite build",
+    "deploy": "vite build && netlify deploy",
+    "deploy:prod": "vite build && netlify deploy --prod"
   },
   "license": "ISC",
   "devDependencies": {
     "process": "^0.11.10"
   },
   "dependencies": {
-    "@t_g/default-ui": "^0.31.0"
+    "@t_g/default-ui": "^0.31.0",
+    "vite": "^4.5.0"
   }
 }

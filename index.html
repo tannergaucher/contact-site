@@ -8,30 +8,13 @@
       name="description"
       content="Full Stack Software Engineer Based in Brooklyn, NY"
     />
-    <link rel="stylesheet" href="./avatar-quote-dialog/index.css" />
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap");
-      :root {
-        --sans: "Fira Sans", sans-serif;
-        --error-color: tomato;
-      }
-
-      body {
-        font-family: var(--sans);
-      }
-
-      input,
-      textarea {
-        font-size: var(--text-lg);
-      }
-    </style>
   </head>
   <body>
     <header>
-      <a href="/">
+      <a href="/" id="site-title">
         <button>Tanner Gaucher</button>
       </a>
-      <button aria-label="Toggle Theme" name="Current theme" />
+      <button name="Toggle theme" aria-label="Toggle Theme"></button>
     </header>
     <main>
       <h1>Tanner Gaucher</h1>
@@ -85,7 +68,7 @@
         <input type="email" name="email" id="email" required />
         <label for="message"> Message: </label>
         <br />
-        <textarea name="message" id="message" rows="7" required />
+        <textarea name="message" id="message" rows="7" required></textarea>
         <button type="submit">Submit</button>
       </form>
     </main>
@@ -110,10 +93,6 @@
         </ul>
       </nav>
     </footer>
-    <script
-      src="node_modules/@t_g/default-ui/package/index.ts"
-      type="module"
-    ></script>
-    <script src="./avatar-quote-dialog/index.ts" type="module"></script>
+    <script src="./index.ts" type="module"></script>
   </body>
 </html>
