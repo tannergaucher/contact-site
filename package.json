@@ -12,6 +12,9 @@
   },
   "license": "ISC",
   "dependencies": {
-    "@t_g/default-ui": "^0.28.5"
+    "@t_g/default-ui": "^0.29.1"
+  },
+  "devDependencies": {
+    "process": "^0.11.10"
   }
 }
