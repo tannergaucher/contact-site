@@ -11,10 +11,10 @@
     "deploy:prod": "npx parcel build index.html && netlify deploy --prod"
   },
   "license": "ISC",
-  "dependencies": {
-    "@t_g/default-ui": "^0.29.1"
-  },
   "devDependencies": {
     "process": "^0.11.10"
+  },
+  "dependencies": {
+    "@t_g/default-ui": "^0.29.2"
   }
 }
