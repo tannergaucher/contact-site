@@ -15,7 +15,47 @@ const quotes = [
   "😎  BTW let's work together. Hire me!",
 ];
 
+enum Settings {
+  Sans = "sans",
+  Serif = "serif",
+  Monospace = "monospace",
+}
+
 const avatarQuoteContainer = document.querySelector(".avatar-quote-container");
+
+const fontFamilyButton = document.querySelector("#toggle-font-family");
+
+if (!fontFamilyButton) {
+  throw new Error("Could not find #toggle-settings button");
+}
+
+// initialize to sans
+fontFamilyButton.innerHTML = Settings.Sans;
+
+fontFamilyButton.addEventListener("click", () => {
+  const currentSetting = fontFamilyButton.innerHTML;
+
+  const bodyElement = document.querySelector("body");
+
+  if (!bodyElement) {
+    throw new Error("Could not find html element");
+  }
+
+  switch (currentSetting) {
+    case Settings.Sans:
+      fontFamilyButton.innerHTML = Settings.Serif;
+      bodyElement.setAttribute("setting", Settings.Serif);
+      break;
+    case Settings.Serif:
+      fontFamilyButton.innerHTML = Settings.Monospace;
+      bodyElement.setAttribute("setting", Settings.Monospace);
+      break;
+    case Settings.Monospace:
+      fontFamilyButton.innerHTML = Settings.Sans;
+      bodyElement.setAttribute("setting", Settings.Sans);
+      break;
+  }
+});
 
 if (!avatarQuoteContainer) {
   throw new Error("Could not find .avatar-quote-container");

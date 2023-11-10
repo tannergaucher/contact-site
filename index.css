@@ -11,6 +11,7 @@ input,
 textarea {
   font-size: var(--text-lg);
 }
+
 @media (max-width: 900px) {
   #site-title {
     display: none;
@@ -174,4 +175,56 @@ textarea {
   100% {
     opacity: 1;
   }
+}
+
+body[setting="serif"] {
+  font-family: serif;
+}
+
+body[setting="sans-serif"] {
+  font-family: sans-serif;
+}
+
+body[setting="monospace"] {
+  font-family: monospace;
+}
+
+body[setting="cursive"] {
+  font-family: cursive;
+}
+
+body[setting="fantasy"] {
+  font-family: fantasy;
+}
+
+body[setting="system-ui"] {
+  font-family: system-ui;
+}
+
+body[setting="ui-serif"] {
+  font-family: ui-serif;
+}
+
+body[setting="ui-sans-serif"] {
+  font-family: ui-sans-serif;
+}
+
+body[setting="ui-monospace"] {
+  font-family: ui-monospace;
+}
+
+html[setting="ui-rounded"] {
+  font-family: ui-rounded;
+}
+
+html[setting="emoji"] {
+  font-family: emoji;
+}
+
+body[setting="math"] {
+  font-family: math;
+}
+
+body[setting="fangsong"] {
+  font-family: fangsong;
 }
