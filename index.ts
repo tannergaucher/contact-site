@@ -33,10 +33,6 @@ const observer = new IntersectionObserver((entries) => {
 observer.observe(avatarQuoteContainer);
 
 function setQuotes(quotes: string[]) {
-  const avatarQuoteContainer = document.querySelector(
-    ".avatar-quote-container"
-  );
-
   if (!avatarQuoteContainer) {
     throw new Error("Could not find .avatar-quote-container");
   }
@@ -64,12 +60,14 @@ function setQuotes(quotes: string[]) {
 
   nextQuote.setAttribute("current-quote", "true");
   nextQuote.innerText = quotes[nextQuoteIndex];
-  avatarQuoteContainer?.appendChild(nextQuote);
+  avatarQuoteContainer.appendChild(nextQuote);
 }
 
 let interval: number | null = null;
 
 function resetQuotes() {
+  if (!avatarQuoteContainer) return;
+
   if (interval) {
     clearInterval(interval);
   }
@@ -82,7 +80,7 @@ function resetQuotes() {
   initialQuote.setAttribute("avatar-quote-number", "1");
   initialQuote.setAttribute("current-quote", "true");
   initialQuote.innerText = quotes[0];
-  avatarQuoteContainer?.appendChild(initialQuote);
+  avatarQuoteContainer.appendChild(initialQuote);
 
   interval = setInterval(() => {
     setQuotes(quotes);
