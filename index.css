@@ -188,3 +188,15 @@ body[setting="sans-serif"] {
 body[setting="monospace"] {
   font-family: monospace;
 }
+
+body[setting="cursive"] {
+  font-family: cursive;
+}
+
+body[setting="fantasy"] {
+  font-family: fantasy;
+}
+
+body[setting="math"] {
+  font-family: math;
+}

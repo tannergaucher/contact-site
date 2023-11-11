@@ -19,6 +19,9 @@ enum Settings {
   Sans = "sans",
   Serif = "serif",
   Monospace = "monospace",
+  Cursive = "cursive",
+  Fantasy = "fantasy",
+  Math = "math",
 }
 
 const avatarQuoteContainer = document.querySelector(".avatar-quote-container");
@@ -41,18 +44,29 @@ fontFamilyButton.addEventListener("click", () => {
     throw new Error("Could not find html element");
   }
 
+  const setSetting = (setting: Settings) => {
+    bodyElement.setAttribute("setting", setting);
+    fontFamilyButton.innerHTML = setting;
+  };
+
   switch (currentSetting) {
     case Settings.Sans:
-      fontFamilyButton.innerHTML = Settings.Serif;
-      bodyElement.setAttribute("setting", Settings.Serif);
+      setSetting(Settings.Serif);
       break;
     case Settings.Serif:
-      fontFamilyButton.innerHTML = Settings.Monospace;
-      bodyElement.setAttribute("setting", Settings.Monospace);
+      setSetting(Settings.Monospace);
       break;
     case Settings.Monospace:
-      fontFamilyButton.innerHTML = Settings.Sans;
-      bodyElement.setAttribute("setting", Settings.Sans);
+      setSetting(Settings.Cursive);
+      break;
+    case Settings.Cursive:
+      setSetting(Settings.Fantasy);
+      break;
+    case Settings.Fantasy:
+      setSetting(Settings.Math);
+      break;
+    case Settings.Math:
+      setSetting(Settings.Sans);
       break;
   }
 });
