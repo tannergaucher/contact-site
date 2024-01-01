@@ -6,93 +6,41 @@
     <title>Tanner Gaucher</title>
     <meta
       name="description"
-      content="Full Stack Software Engineer Based in Brooklyn, NY"
+      content="Tanner Gaucher is a full stack developer based in Brooklyn, New York."
     />
+
+    <style>
+      input,
+      textarea,
+      button,
+      body {
+        color: papayawhip;
+        background-color: black;
+        width: 100%;
+      }
+
+      button {
+        margin: 0;
+        padding: 0;
+      }
+    </style>
   </head>
   <body>
-    <header>
-      <a href="/" id="site-title">
-        <button>Tanner Gaucher</button>
-      </a>
-      <button name="Toggle theme" aria-label="Toggle Theme"></button>
-    </header>
     <main>
       <h1>Tanner Gaucher</h1>
-      <h2>Full Stack Software Engineer Based in Brooklyn, NY</h2>
-      <nav style="margin-block-end: var(--space-lg)" role="navigation">
-        <ul>
-          <li>
-            <a
-              target="_blank"
-              href="https://github.com/tannergaucher"
-              style="font-size: var(--text-lg)"
-            >
-              Github
-            </a>
-          </li>
-          <li>
-            <a
-              target="_blank"
-              href="https://www.linkedin.com/in/tanner-gaucher-050604197/"
-              style="font-size: var(--text-lg)"
-            >
-              LinkedIn
-            </a>
-          </li>
-        </ul>
-      </nav>
-      <hr />
-      <h2>Introduction</h2>
-      <article style="position: relative">
-        <video
-          style="border-radius: var(--radius)"
-          src="https://storage.googleapis.com/tannergaucher-dot-com/site-2.mp4"
-          autoplay
-          loop
-          muted
-        ></video>
-        <img
-          class="avatar-image"
-          src="./assets/avatar.jpg"
-          alt="Avatar image of Tanner Gaucher"
-          title="Tanner Gaucher"
-        />
-        <div class="avatar-quote-container"></div>
-      </article>
-      <hr />
-      <h2>Contact</h2>
-      <h3>Leave a message after the tone and I'll get back to you. Beep 🤖</h3>
+      <h2>Full Stack TS / Node in Brooklyn, New York</h2>
+
       <form name="contact" method="POST" data-netlify="true">
-        <label for="email"> Email: </label>
+        <label for="email"> Email </label>
         <br />
         <input type="email" name="email" id="email" required />
-        <label for="message"> Message: </label>
         <br />
-        <textarea name="message" id="message" rows="7" required></textarea>
+        <label for="message"> Message </label>
+        <br />
+        <textarea name="message" id="message" required></textarea>
+        <br />
         <button type="submit">Submit</button>
       </form>
     </main>
-    <footer>
-      <h2>Tanner Gaucher</h2>
-      <h3>Full Stack Software Engineer Based in Brooklyn, NY</h3>
-      <nav>
-        <ul>
-          <li>
-            <a href="https://github.com/tannergaucher" target="_blank">
-              Github
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.linkedin.com/in/tanner-gaucher-050604197/"
-              target="_blank"
-            >
-              LinkedIn</a
-            >
-          </li>
-        </ul>
-      </nav>
-    </footer>
-    <script src="./index.ts" type="module"></script>
   </body>
 </html>
