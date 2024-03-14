@@ -15,7 +15,7 @@
     "process": "^0.11.10"
   },
   "dependencies": {
-    "@t_g/default-ui": "^0.31.0",
+    "@t_g/default-ui": "^0.34.0",
     "vite": "^4.5.0"
   }
 }
